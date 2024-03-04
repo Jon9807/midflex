@@ -1,0 +1,22 @@
+Wireframes:
+I use wireframe at the start to the project. It was to give me an idea of where to put each of the elements.  
+
+Cards: 
+Cards were used to present content in a structured and visually appealing way. I used it when creating the recipe page. The cards each contained a title, description, and image. The card design made it easy for users to understand and interact with the content.
+
+Media queries:
+The hambuger menu in the header file used media queries to adjust its appearance when the screen width is at least 700 pixels (@media screen and (min-width: 700px)).
+
+Flexbox: 
+For flexbox the .flex-container class used display: flex and flex-direction: column to ensure a column-based layout in the recipe page.
+
+Less Preprocessor:
+I used less to define color variables that were used throughout the stylesheets. I created variables such as, @background-color, @text-color, @box-shadow-color,@box-shadow-hover-color and used them as needed. I also created a few numeric variables such as @card-width, @footer-padding, @transition-duration, and @border-radius
+
+Hamburger Menu and Common Menu Titles:
+For the navbar, i created a seperate file called header, which include all the features of the hambuger menu. So instead of individually creating the menu for each of the pages. I just referenced the header file instead. The only thing I changed for the menu is I added a new link called 'form'.
+
+
+Form Controls:
+For form controls, I wasn't sure how to impliment it in the recipe page so I created a sperate page call 'form'. It's similar to the form we worked on for one of the homework. But I changed the content to fit this project. it used form controls (radio buttons, checkboxes, textarea) were implemented to collect user feedback on the web programming recipes.
+

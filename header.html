@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIT 215 Menu</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+  <style>
+    body {
+      background-color: #cfb991;
+      color: #000000;
+    }
+
+    #navbar {
+      position: absolute;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 100vh;
+      border: 1px;
+      padding: 1px;
+      background-color: #000000;
+      color: #CFB991;
+      text-align: center;
+      transform: translateY(-100%);
+      transition: transform 0.1s ease;
+    }
+
+    #navbar:target {
+      transform: translateY(0);
+    }
+
+    #navbar>ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    #navbar>ul a {
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: larger;
+      padding: 2px;
+      margin: 2px;
+      color: #ddb945;
+      display: block;
+    }
+
+    #navbar>ul a:link {
+      background-color: black;
+    }
+
+    #navbar>ul a:visited {
+      color: #8e6f3e;
+    }
+
+    #navbar>ul a:focus {
+      color: #daaa00;
+      background-color: lightgoldenrodyellow;
+    }
+
+    #navbar>ul a:hover {
+      color: #ddb945;
+      background-color: lightgoldenrodyellow;
+    }
+
+    #navbar>ul a:active {
+      color: #daaa00;
+      background-color: lightgoldenrodyellow;
+    }
+
+    a.twitter {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #ebd99f;
+      display: none;
+    }
+
+    a.hamburger {
+      color: #000000;
+    }
+
+    a.close {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #ebd99f;
+      display: none;
+    }
+
+    #navbar:target a.close {
+      display: block;
+    }
+
+    .content h3 {
+      font-weight: normal;
+      font-size: 1.2em;
+      line-height: 1.5;
+      color: #000000;
+      margin-top: 20px;
+    }
+
+    @media screen and (min-width: 700px) {
+      #navbar {
+        position: static;
+        height: 50px;
+        transform: translateY(0);
+        width: 100%;
+      }
+
+      .hamburger,
+      .close {
+        display: none;
+      }
+
+      a.twitter {
+        display: block;
+      }
+
+      #navbar>ul li {
+        display: inline-block;
+        margin-right: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="hamburger" href="#navbar">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <nav id="navbar">
+    <a class="twitter" href="https://twitter.com/i/flow/login?redirect_after_login=%2Fmtcomfortelem" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+
+    <a class="close" href="#">
+      <i class="fa fa-close"></i>
+    </a>
+
+    <ul>
+      <li><a href="index.html" target="_parent"><i class="fas fa-home"></i>Home</a></li>
+      <li><a href="flash.html" target="_parent">Bulletin</a></li>
+      <li><a href="recipe.html" target="_parent">Recipe</a></li>
+      <li><a href="form.html" target="_parent">Form</a></li>
+
+    </ul>
+  </nav>
+</body>
+
+</html>

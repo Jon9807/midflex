@@ -1,0 +1,60 @@
+// Color Variables
+@background-color: #cfb991;
+@text-color: #000000;
+@box-shadow-color: rgba(0, 0, 0, 0.2);
+@box-shadow-hover-color: rgba(0, 0, 0, 0.4);
+@footer-bg-color: @text-color;
+@footer-text-color: #cfb991;
+
+// Dimension Variables
+@card-width: 80%;
+@footer-padding: 10px;
+
+// Box Shadow Variables
+@box-shadow-normal: 0 4px 8px 0 @box-shadow-color;
+@box-shadow-hover: 0 8px 16px 0 @box-shadow-hover-color;
+
+@transition-duration: 0.3s;
+@border-radius: 5px;
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: @background-color;
+  color: @text-color;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0; 
+  text-align: center;
+  padding: @footer-padding;
+  background-color: @footer-bg-color;
+  color: @footer-text-color;
+}
+
+.card {
+  box-shadow: @box-shadow-normal;
+  transition: @transition-duration;
+  width: @card-width;
+  margin: auto;
+  border-radius: @border-radius;
+  padding: 20px;
+}
+
+.card:hover {
+  box-shadow: @box-shadow-hover;
+}
+
+h1 {
+  text-align: center;
+}

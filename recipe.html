@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIT Recipe</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet/less" type="text/css" href="./less/recipe.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+    <object data="header.html" width="100%" height="150px"></object>
+    <h1>Web Programming Recipes</h1>
+
+    <!-- Recipe Content 1 -->
+    <div class="recipe-1 card">
+        <h1>Recipe: Dynamically Changing Web Content</h1>
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>The DOM createElement method</li>
+            <li>The DOM append method</li>
+            <li>Template literals</li>
+            <li>The innerText method</li>
+            <li>The innerHTML method</li>
+        </ul>
+        <h2>Instructions:</h2>
+        <p>Step 1: Create a web document and fill it with basic tags</p>
+        <p>Step 2: Add a div element with class "demo" to the body</p>
+        <p>Step 3: Add script tags just before the</p>
+        <p>Step 4: Use querySelector to get a reference to the div with class "demo"</p>
+        <img src="images/fdemo.png" alt="web img"/>
+        <p>Step 5: Use textContent method to add plain text</p>
+        <img src="images/method.png" alt="web img"/>
+        <p>Step 6: Add HTML code using innerHTML method</p>
+        <li>Modify the style for the "demo" class to have a width/height of 300px</li>   
+        <img src="images/demo.png" alt="web img"/>
+        <img src="images/big.png" alt="web img" height="300"/>
+        <p>Step 7: Use the DOM createElement method with append</p>
+        <img src="images/domie.png" alt="web img" height="300"/>
+        <img src="images/see.png" alt="web img" height="300"/>
+    </div>
+
+    <!-- Recipe Content 2 -->
+    <div class="recipe-2 card">
+        <h1>Recipe 2: Displaying JSON Data</h1>
+        <h2>Description:</h2>
+        <p>JSON stands for JavaScript Object Notation, and it comes close to an array of objects, like this array of
+            animals below. Note, it is important to make sure that objects have common attributes if these
+            attributes are being used to display information.</p>
+
+        <h2>Ingredients:</h2>
+        <div class="recipe-details">
+            <div class="left-column">
+                <ul>
+                    <li>The DOM createElement method</li>
+                    <li>The DOM append method</li>
+                    <li>Array of objects</li>
+                    <li>Choice of images</li>
+                </ul>
+            </div>
+            <p><strong> Make sure that the images are referenced correctly. Then, you can use the techniques in Recipe 1
+                    to display the
+                    animals on a web page. You can use a simple for or while loop, or array method forEach.</strong></p>
+        </div>
+        <img src="images/let.png" alt="web img" height="250px" width="300px" />
+
+        <pre>
+        <code>
+const petsData = [
+    {
+        petName: "Stella",
+        age: 7,
+        weightInKilos: 24,
+        breed: "Dalmation",
+        pic: "images\\stella.png"
+    },
+    {
+        petName: "Cody",
+        age: 8,
+        weightInKilos: 22,
+        breed: "Corgi",
+        pic: "images\\cody.png"
+    },
+    {
+        petName: "Mango",
+        age: 2,
+        weightInKilos: 11,
+        breed: "Persian",
+        pic: "images\\mango.png"
+    },
+    {
+        petName: "Lucy",
+        age: 4,
+        weightInKilos: 35,
+        breed: "Ball Python",
+        pic: "images\\lucy.png"
+    },
+    {
+        petName: "Buhmie",
+        age: 1,
+        weightInKilos: 28,
+        breed: "Bull-dog",
+        pic: "images\\buhmie.png"
+    }
+];
+        </code>
+    </pre>
+        <img src="images/dog.png" alt="web img" height="250px" width="300px" />
+
+    </div>
+
+    <!-- Recipe Content 3 -->
+    <div class="recipe-3 card">
+        <h1>Recipe 3: Finding JSON Data</h1>
+        <h2>Description:</h2>
+        <p>Using the same array of objects, use either find (returns the first element) or a combination of some
+            type of iteration and find. You can substitute your own logic instead of find if you iterate through the
+            array – adding each found item to another array. Suppose we wanted to find all dogs with age greater
+            than 2. This is the desired result:</p>
+
+        <img src="images/out.png" alt="web img" height="100px" />
+
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>The Array forEach method</li>
+            <li>A source array of objects</li>
+            <li>An empty array of objects</li>
+            <li>The array method, push</li>
+        </ul>
+        <h2>Try this:</h2>
+        <img src="images/trythis.png" alt="web img" height="100px" />
+    </div>
+    <footer>
+        <p>Copyright © 2024 Ngun Hmung</p>
+      </footer>
+      
+</body>
+
+</html>
